@@ -54,7 +54,7 @@ class FreeplayState extends MusicBeatState
 		#end
 
 		if (StoryMenuState.weekUnlocked[2] || isDebug)
-			addWeek(['Awkward', 'Takoyaki', 'Sunset'], 1, ['dad']);
+			addWeek(['Bopeebo', 'Fresh', 'Dadbattle'], 1, ['dad']);
 
 		if (StoryMenuState.weekUnlocked[2] || isDebug)
 			addWeek(['Spookeez', 'South', 'Monster'], 2, ['spooky']);
@@ -250,10 +250,10 @@ class FreeplayState extends MusicBeatState
 	function changeSelection(change:Int = 0)
 	{
 		#if !switch
-		NGio.logEvent('Takoyaki');
+		NGio.logEvent('Fresh');
 		#end
 
-		// NGio.logEvent('Takoyaki');
+		// NGio.logEvent('Fresh');
 		FlxG.sound.play(Paths.sound('scrollMenu'), 0.4);
 
 		curSelected += change;
