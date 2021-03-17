@@ -1425,7 +1425,7 @@ class PlayState extends MusicBeatState
 		FlxG.watch.addQuick("beatShit", curBeat);
 		FlxG.watch.addQuick("stepShit", curStep);
 
-		if (curSong == 'Fresh')
+		if (curSong == 'Takoyaki')
 		{
 			switch (curBeat)
 			{
@@ -1444,7 +1444,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (curSong == 'Bopeebo')
+		if (curSong == 'Awkward')
 		{
 			switch (curBeat)
 			{
@@ -2297,7 +2297,7 @@ class PlayState extends MusicBeatState
 			boyfriend.playAnim('idle');
 		}
 
-		if (curBeat % 8 == 7 && curSong == 'Bopeebo')
+		if (curBeat % 8 == 7 && curSong == 'Awkward')
 		{
 			boyfriend.playAnim('hey', true);
 
